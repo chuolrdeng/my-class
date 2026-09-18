@@ -1,3 +1,7 @@
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -8,6 +12,10 @@
         transform: translateY(0);
     }
 }
+
+/* =========================================
+   GENERAL
+   ========================================= */
 
 * {
     box-sizing: border-box;
@@ -34,6 +42,10 @@ body {
 .fade-in:nth-child(1) { animation-delay: 0.1s; }
 .fade-in:nth-child(2) { animation-delay: 0.2s; }
 .fade-in:nth-child(3) { animation-delay: 0.3s; }
+
+/* =========================================
+   HEADER
+   ========================================= */
 
 header {
     background: linear-gradient(135deg, #6d1f3a 0%, #8b2550 100%);
@@ -104,6 +116,9 @@ nav {
     width: 100%;
 }
 
+/* =========================================
+   MAIN
+   ========================================= */
 
 main {
     max-width: 1200px;
@@ -114,6 +129,9 @@ main > section {
     padding: 90px 8%;
 }
 
+/* =========================================
+   ABOUT / HERO
+   ========================================= */
 
 .hero {
     min-height: 75vh;
@@ -166,6 +184,9 @@ main > section {
     line-height: 1.8;
 }
 
+/* =========================================
+   HERO IMAGE
+   ========================================= */
 
 .hero-image {
     position: relative;
@@ -188,6 +209,9 @@ main > section {
     box-shadow: 0 30px 80px rgba(201, 162, 39, 0.3);
 }
 
+/* =========================================
+   PROJECTS
+   ========================================= */
 
 #projects {
     background: linear-gradient(180deg, #ffffff 0%, #f9f7f4 100%);
@@ -293,6 +317,9 @@ main > section {
     opacity: 1;
 }
 
+/* =========================================
+   CONTACT
+   ========================================= */
 
 #contact {
     background: linear-gradient(135deg, #176d72 0%, #0f4c50 100%);
@@ -373,6 +400,9 @@ main > section {
     transform: translateX(4px);
 }
 
+/* =========================================
+   FOOTER
+   ========================================= */
 
 footer {
     background: #4c1629;
@@ -388,6 +418,9 @@ footer:hover {
     background: #5a1a34;
 }
 
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 700px) {
 
