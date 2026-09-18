@@ -1,0 +1,319 @@
+```css
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fcfaf7;
+    color: #302a28;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background: #6d1f3a;
+    color: white;
+
+    padding: 24px 8%;
+
+    border-bottom: 5px solid #c9a227;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 28px;
+}
+
+.navigation-links a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+    color: #e0c45c;
+}
+
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main > section {
+    padding: 90px 8%;
+}
+
+
+/* =========================================
+   ABOUT / HERO
+   ========================================= */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fcfaf7 65%,
+            #e4f0ef 65%
+        );
+}
+
+.hero small {
+    color: #176d72;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    color: #6d1f3a;
+
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.95;
+
+    max-width: 850px;
+
+    margin-bottom: 28px;
+}
+
+.hero p {
+    max-width: 650px;
+
+    font-size: 1.15rem;
+
+    color: #514947;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   IMAGE
+   ========================================= */
+
+.about-image {
+    width: 40%;
+    max-width: 400px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    margin-top: 35px;
+
+    border-radius: 16px;
+
+    border: 4px solid #c9a227;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   PROJECTS
+   ========================================= */
+
+#projects {
+    background: white;
+}
+
+#projects h2,
+#contact h2 {
+    color: #6d1f3a;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 12px;
+}
+
+.section-introduction {
+    max-width: 650px;
+
+    margin-bottom: 40px;
+}
+
+
+/* Project Cards */
+
+article {
+    background: #f7f3ee;
+
+    border-left: 5px solid #176d72;
+
+    padding: 28px;
+
+    margin-bottom: 20px;
+
+    border-radius: 0 12px 12px 0;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateX(6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+article h3 {
+    color: #176d72;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 8px;
+}
+
+article p {
+    color: #514947;
+}
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+#contact {
+    background: #176d72;
+
+    color: white;
+}
+
+#contact h2 {
+    color: #e0c45c;
+}
+
+#contact p {
+    max-width: 600px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Email Button */
+
+.email-button {
+    display: inline-block;
+
+    background: #c9a227;
+
+    color: #302a28;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.email-button:hover {
+    background: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #4c1629;
+
+    color: #f5eee7;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .navigation-links {
+        gap: 15px;
+    }
+
+    main > section {
+        padding: 70px 8%;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+}
+```
